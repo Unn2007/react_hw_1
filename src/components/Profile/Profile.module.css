@@ -1,40 +1,37 @@
 .profile {
-background-color: white;
-
-};
+  background-color: white;
+  font-size: 24px;
+  padding-top: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
 
 .description {
-  
-    
+  padding: 0px 110px;
 }
 
 .avatar {
-    display: block;
-     width: 30%;
-    /* height: 30%; */
-   border-radius: 50%;
-   border: 3px solid #99a4b0;
-   margin: 0 auto;
-   
+  display: block;
+  width: 170px;
 
-
+  border-radius: 50%;
+  border: 3px solid #99a4b0;
 }
 
 .name {
-color: #3c4756;
-text-align: center;
-
+  color: #3c4756;
+  text-align: center;
+  font-weight: 700;
 }
 
 .tag {
-color: #99a4b0;
-text-align: center;
-
+  color: #99a4b0;
+  text-align: center;
+  font-size: 20px;
 }
 
 .location {
-    color: #99a4b0;
-    text-align: center;
-
-    
+  color: #99a4b0;
+  text-align: center;
+  font-size: 18px;
 }

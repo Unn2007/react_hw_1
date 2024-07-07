@@ -1,11 +1,28 @@
 .stats {
+  display: flex;
+  flex-direction: row;
 
+  list-style: none;
+  padding: 0 0;
+  background-color: #f3f6f9;
+}
+
+.stats li {
+  flex-basis: calc((100%) / 3);
+  padding: 40px 0px;
+  border: 1px solid #e5eaf1;
 }
 
 .label {
-
+  display: block;
+  text-align: center;
+  color: #99a4b0;
+  font-size: 20px;
 }
 
 .quantity {
-    
+  display: block;
+  text-align: center;
+  color: #3c4756;
+  font-weight: 700;
 }
