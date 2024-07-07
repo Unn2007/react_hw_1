@@ -1,25 +1,40 @@
 .profile {
-background-color: palevioletred;
-width: 100px;
-height: 100px;
+background-color: white;
+
 };
 
 .description {
-
+  
+    
 }
 
 .avatar {
+    display: block;
+     width: 30%;
+    /* height: 30%; */
+   border-radius: 50%;
+   border: 3px solid #99a4b0;
+   margin: 0 auto;
+   
+
 
 }
 
 .name {
+color: #3c4756;
+text-align: center;
 
 }
 
 .tag {
+color: #99a4b0;
+text-align: center;
 
 }
 
 .location {
+    color: #99a4b0;
+    text-align: center;
+
     
 }
