@@ -1,14 +1,25 @@
+import PropTypes from 'prop-types';
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 import css from './FriendList.module.css';
+import { Fragment } from 'react';
 
 export const FriendList = ({ friends }) => {
-  const friendListcards = friends.map(({ avatar, name, id, isOnline }) => {
-    
+  const friendListcards = friends.map(({ avatar, name, isOnline, id }) => {
     return (
-      <FriendListItem avatar={avatar} name={name} isOnline={isOnline} id={id} />
+      <Fragment key={id}>
+        <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
+      </Fragment>
     );
   });
-  console.log(<ul className={css.friendList}>{friendListcards}</ul>)
-  return <ul className={css.friendList}>{friendListcards}</ul>
 
+  return <ul className={css.friendList}>{friendListcards}</ul>;
 };
+
+FriendList.propTypes = PropTypes.arrayOf(
+  PropTypes.exact({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired
+  })
+)
