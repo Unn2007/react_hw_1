@@ -3,13 +3,15 @@
 }
 
 td,th {
-    width: 20vw;
+    width: 30vw;
     
 }
 td {
-   
+   border-right: 1px solid  #e4e4e4;
+   border-left: 1px solid #e4e4e4;
     text-align: center;
     padding: 10px 0px;
+    
 }
 thead {
     background-color: #00bcd5;
@@ -19,8 +21,9 @@ thead {
 
 thead th {
     
-   padding: 21px 0px;
-
+   padding: 10px 0px;
+   border-right: 1px solid white;
+   border-left: 1px solid white;
 }
 thead tr {
     display: flex;
@@ -30,5 +33,10 @@ thead tr {
 tbody tr {
     display: flex;
     flex-direction: row;
+    background-color: #fff;
     
+}
+
+tr:nth-child(2n) {
+    background-color: #ecf1f3;
 }
