@@ -1,6 +1,16 @@
 .transactionHistory {
 
 }
+
+td,th {
+    width: 20vw;
+    
+}
+td {
+   
+    text-align: center;
+    padding: 10px 0px;
+}
 thead {
     background-color: #00bcd5;
     color: #daffff;
@@ -9,16 +19,16 @@ thead {
 
 thead th {
     
-    padding: 20px 20px;
+   padding: 21px 0px;
 
 }
 thead tr {
     display: flex;
     flex-direction: row;
-    flex-basis: calc(100%/3);
+    
 }
 tbody tr {
     display: flex;
     flex-direction: row;
-    flex-basis: calc(100%/3);
+    
 }
