@@ -1,11 +1,12 @@
 import css from './TransactionHistory.module.css'
+import { formatStatName} from 'utils';
 export const TransactionHistory = ({transactions}) => {
 const TransactionHistoryItem = transactions.map(({id,type,amount,currency})=>{
     return (
         <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td>{formatStatName(type)}</td>
+      <td>{formatStatName(amount)}</td>
+      <td>{formatStatName(currency)}</td>
     </tr>
     )
 
