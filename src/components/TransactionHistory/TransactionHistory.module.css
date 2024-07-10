@@ -1,0 +1,24 @@
+.transactionHistory {
+
+}
+thead {
+    background-color: #00bcd5;
+    color: #daffff;
+
+}
+
+thead th {
+    
+    padding: 20px 20px;
+
+}
+thead tr {
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(100%/3);
+}
+tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(100%/3);
+}
