@@ -15,11 +15,14 @@ export const FriendList = ({ friends }) => {
   return <ul className={css.friendList}>{friendListcards}</ul>;
 };
 
-FriendList.propTypes = PropTypes.arrayOf(
-  PropTypes.exact({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired
-  })
-)
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};
+
